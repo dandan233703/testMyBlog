@@ -1,0 +1,20 @@
+<div class="per-profile margin-bottom-40 padding-top-40">
+    <div class="my-header margin-bottom-30">
+        <img src="{{ '/assets/images/peo_he.png' | prepend: site.baseurl }}"/>
+    </div>
+    <p class="name">{{site.name}}</p>
+    <p class="per-line margin-bottom-20">{{site.per_profile}}</p>
+    <p class="e-mail"><i class="iconfont icon-email margin-right-5"></i>{{site.email}}</p>
+</div>
+<div class="padding-top-40">
+    <h5>项目</h5>
+    <ul>
+        {% for category in site.categories %}
+            {% if page.categories && page.categories == category[0] %}
+                <li class="ac"><a>{{ category[0] }}{{ category[1] | size }}</a></li>
+            {% else %}
+                <li><a>{{ category[0] }}{{ category[1] | size }}</a></li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</div>

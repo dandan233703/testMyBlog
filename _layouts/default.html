@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% include head.html %}
+<body>
+    {% include header.html %}
+    {% include banner.html %}
+    <div class="padding-top-40 light-bg">
+        <div class="clearfix">
+            <div class="fl">
+                {{ content }}
+            </div>
+            <div class="fr">
+                {% include right.html %}
+            </div>
+        </div>
+    </div>
+    {% include footer.html %}
+</body>
+</html>

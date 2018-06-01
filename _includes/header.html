@@ -1,0 +1,37 @@
+<div class="header">
+    <div class="cont-center clearfix">
+        <a href="{{ '/' | prepend: site.baseurl }}" class="logo fl">
+            <img src="{{ '/assets/images/logo.png' | prepend: site.baseurl }}">
+        </a>
+        <ul class="fr nav">
+            {% if page.url contains "index" or page.url == "/" %}
+                <li class="ac">
+            {% else %}
+                <li>
+            {% endif %}
+                <a href="{{ '/' | prepend: site.baseurl }}">首页</a>
+            </li>
+            {% if page.url contains "tool" %}
+            <li class="ac">
+                {% else %}
+            <li>
+                {% endif %}
+                <a href="{{ '/tool.html' | prepend: site.baseurl }}">工具</a>
+            </li>
+            {% if page.url contains "technology" %}
+            <li class="ac">
+                {% else %}
+            <li>
+                {% endif %}
+                <a href="{{ '/technology.html' | prepend: site.baseurl }}">技术</a>
+            </li>
+            {% if page.url contains "essay" %}
+            <li class="ac">
+                {% else %}
+            <li>
+                {% endif %}
+                <a href="{{ '/essay.html' | prepend: site.baseurl }}">随笔</a>
+            </li>
+        </ul>
+    </div>
+</div>

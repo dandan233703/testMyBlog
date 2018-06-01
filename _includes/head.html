@@ -1,0 +1,18 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title | append: ' - ' |append: site.title }}</title>
+
+    <link rel="stylesheet" href="{{ '/assets/styles/style.css' | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ '/assets/fonts/iconfont.css' | prepend: site.baseurl }}">
+
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ '/feed.xml' | prepend: site.baseurl }}">
+
+    <meta name="keywords" content="{{ page.title | append: ', ' | append: site.name}}">
+    <script src="{{ '/assets/js/jquery.min.js' | prepend: site.baseurl }}"></script>
+    <!--[if lt IE 9]>
+         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
